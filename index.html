@@ -13,6 +13,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 <!--navbra-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">Lina</a> 
@@ -22,14 +23,14 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link" href="#">How we'er</a>
+            <a class="nav-link" href="#how">How we'er</a>
 
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Our services</a>
+          <a class="nav-link" href="#services">Our services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Connect</a>
+          <a class="nav-link" href="#connect">Connect</a>
         </li>
       </ul>
     </div>
@@ -65,43 +66,51 @@
     </div>
   </div>
 <!--mid of page-->
-  <div class="container my-5">
-    <h1>How we are ?</h1>
-    <p>We are a group of content makers,
-     programmers and designers.
-    Our goal is to deliver the ideas of small and medium companies to the world 
-    to ensure fairer competition in the labor market.</p>
-  </div>
-  <div class="container my-5">
-    <h1>Our services</h1>
-    <p>We offer the following social media management services:</p>
-    <ul>
-      <li>Managing social media accounts</li>
-      <li>Analytics and statistics</li>
-      <li>Create social media content</li>
-      <li>Interact with followers and potential clients</li>
-      <li>Designing websites and web applications</li>
-      <li>social media marketing</li>
-    </ul>
-  </div>
-
-  <div class="container my-5">
-    <h1>Connect with us</h1>
-    <form action="#" method="POST">
-      <div class="input-group">
-        <span class="input-group-text">you'er name</span>
-        <input type="text" class="form-control" id="name" name="name">
-      </div>
-      <div class="input-group">
-        <span class="input-group-text">Email</span>
-        <input type="email" class="form-control" id="email" name="email">
-      </div>  
-      <div class="form-group">
-        <label for="subject">Subject:</label><br>
-        <textarea class="form-control" id="comment" name="text" placeholder="write here"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form><br>
+  <section id="how">
+    <div class="container my-5 col-sm-6">
+      <h1>How we are ?</h1>
+      <p>We are a group of content makers,
+      programmers and designers.
+      Our goal is to deliver the ideas of small and medium companies to the world 
+      to ensure fairer competition in the labor market.</p>
+      <img src="img/lina-logo-removebg-preview.png" class="mx-auto d-block">
+    </div>
+  </section>
+  <section id="services">  
+    <div class="container my-5 col-sm-6">
+      <h1>Our services</h1>
+      <p>We offer the following social media management services:</p>
+      <ul>
+        <li>Managing social media accounts</li>
+        <li>Analytics and statistics</li>
+        <li>Create social media content</li>
+        <li>Interact with followers and potential clients</li>
+        <li>Designing websites and web applications</li>
+        <li>social media marketing</li>
+      </ul>
+    </div>
+  </section>  
+  <section id="connect">
+    <div class="container my-5">
+      <h1>Connect with us</h1>
+      <form action="send.php" method="POST">
+        <div class="input-group">
+          <span class="input-group-text">name</span>
+          <input type="text" class="form-control" id="name" name="name" required placeholder="First Name">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Last Name">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Email</span>
+          <input type="email" class="form-control" required id="email" name="email">
+        </div>  
+        <div class="form-group">
+          <label for="subject">Subject:</label><br>
+          <textarea class="form-control" required id="comment" name="text" placeholder="write here"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form><br>  
+    </div>  
+  </section>    
 </body> 
 
 <!--footer-->
