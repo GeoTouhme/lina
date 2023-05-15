@@ -18,4 +18,17 @@
   .social-media-icons i {
     font-size: 1.5rem;
   }
-  
+body {
+   position: relative;
+   }
+.navbar .container-fluid { 
+  justify-content: center;
+  }
+.navbar-nav .nav-item:not(:last-child) {
+  margin-right: 10px;
+  font-size:20px;
+  }
+.dropdown-menu .dropdown-item:not(:last-child) {
+  margin-right: 10px; 
+  font-size:20px;
+}  
